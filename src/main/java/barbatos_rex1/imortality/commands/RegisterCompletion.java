@@ -12,12 +12,16 @@ import java.util.List;
 public class RegisterCompletion implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
-
+        if (args.length == 1) {
+            List<String> results = new LinkedList<>();
+            List<String> players = new LinkedList<>();
+            Bukkit.getServer().getOnlinePlayers().forEach(p -> players.add(p.getName()));
+            players.sort(String::compareTo);
+            StringUtil.copyPartialMatches(args[0], players, results);
+            return results;
+        }
         List<String> results = new LinkedList<>();
-        List<String> players = new LinkedList<>();
-        Bukkit.getServer().getOnlinePlayers().forEach(p -> players.add(p.getName()));
-        players.sort(String::compareTo);
-        StringUtil.copyPartialMatches(args[0], players, results);
+        StringUtil.copyPartialMatches("", new LinkedList<>(), results);
         return results;
     }
 

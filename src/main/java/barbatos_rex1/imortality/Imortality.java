@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.Properties;
 
 public final class Imortality extends JavaPlugin {
-    Imortals imortals;
+    private Imortals imortals;
     @Override
     public void onEnable() {
         // Plugin startup logic
