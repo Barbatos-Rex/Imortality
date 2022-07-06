@@ -1,0 +1,12 @@
+name: Imortality
+version: '${project.version}'
+main: barbatos_rex1.imortality.Imortality
+api-version: 1.19
+authors: [ barbatos_rex1 ]
+commands:
+  imortal:
+    description: Makes a player imortal
+    usage: /imortal <player>
+
+
+
