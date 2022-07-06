@@ -10,7 +10,7 @@ Feel free to use this on your minecraft server for free.
 
 ## Releases
 
-* [Latest](https://github.com/Barbatos-Rex/Imortality-Minecraft-Plugin/releases/tag/RELEASE)
+* [Latest](https://github.com/Barbatos-Rex/Imortality-Minecraft-Plugin/releases/tag/Release_1.1)
 
 If you are looking for a specific version, go to the [release page](https://github.com/Barbatos-Rex/Imortality-Minecraft-Plugin/releases) of this project
 
