@@ -7,6 +7,10 @@ commands:
   imortal:
     description: Makes a player imortal
     usage: /imortal <player>
+  imortals:
+    description: List all imortal players
+    usage: /imortals
+
 
 
 
