@@ -25,14 +25,25 @@ In order to suggest a feature to this proget please file an issue with the featu
  and follow the given template
 
 
-### How can i report a bug?
+### How can I report a bug?
 
+Same as before, file a new issue with the bug template. In the same way, use this link to make
+a [bug report](https://github.com/Barbatos-Rex/Imortality-Minecraft-Plugin/issues/new?assignees=Barbatos-Rex&labels=bug&template=bug_report.md&title=%5BBUG%5D)
+to report the bug.
 
-Same as before, file a new issue with the bug template. In the same way, use this link to make a [bug report](https://github.com/Barbatos-Rex/Imortality-Minecraft-Plugin/issues/new?assignees=Barbatos-Rex&labels=bug&template=bug_report.md&title=%5BBUG%5D) to report the bug.
+### Can I join this project?
 
+Yes, if you want to join the project as a developer or just a simple moderator of the project, contact the owner of the
+project and subbit your application.
 
-### Can i join this project?
+## How to use the plugin
 
-Yes, if you want to join the project as a developer or just a simple moderator of the project, contact the owner of the project and subbit your application.
+### Instalation
 
-### How to use the plugin
+This plugin is installed like any other plugin. Add the plugin .jar file to the plugins directory
+and it will generate the config file in the config directory and all persistence in the bin directory.
+
+### Further more
+
+If you want a detailed explanation of the plugin and the documentation of the plugin in general consult the wiki
+
