@@ -27,14 +27,12 @@ public class Register implements CommandExecutor {
             String playerName = args[0];
             Player p = Bukkit.getPlayer(playerName);
             if (p == null) {
-                sender.sendMessage("Failed");
+                sender.sendMessage(ChatColor.RED + "Wrong number of arguments.");
                 return false;
             }
 
             if (imortals.imortals().contains(p.getUniqueId().toString())) {
                 boolean s = imortals.imortals().remove(p.getUniqueId().toString());
-                Bukkit.getLogger().warning(String.valueOf(s));
-                Bukkit.getLogger().warning(imortals.imortals().toString());
                 sender.sendMessage(ChatColor.AQUA + p.getDisplayName() + " in no longer" + ChatColor.RED + " Imortal");
             } else {
                 imortals.imortals().add(p.getUniqueId().toString());
@@ -43,6 +41,7 @@ public class Register implements CommandExecutor {
             imortals.save();
             return true;
         } catch (ArrayIndexOutOfBoundsException e) {
+            sender.sendMessage(ChatColor.RED + "Wrong number of arguments.");
             return false;
         }
     }
